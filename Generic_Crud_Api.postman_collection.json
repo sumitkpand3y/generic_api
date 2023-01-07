@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "71a59b29-77e3-4349-b2c2-9c726c0ddc39",
+		"name": "Generic_Crud_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16699243"
+	},
+	"item": [
+		{
+			"name": "addOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"19\",\r\n    \"name\":\"Amit Kumar Pandey\",\r\n    \"email\":\"amit@gmail.com\",\r\n    \"phoneNo\":\"909090909090\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7050/v1/addOne/:collectionName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"v1",
+						"addOne",
+						":collectionName"
+					],
+					"variable": [
+						{
+							"key": "collectionName",
+							"value": "user"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update one",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"12\",\r\n    \"name\":\"pandey\",\r\n    \"email\":\"pandey@gmail.com\",\r\n    \"phoneNo\":\"909090909090\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7050/v1/updateOne/:collectionName/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"v1",
+						"updateOne",
+						":collectionName",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "collectionName",
+							"value": "user"
+						},
+						{
+							"key": "id",
+							"value": "63b97391afa8766b34fa7c9c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7050/v1/deleteOne/:collectionName/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"v1",
+						"deleteOne",
+						":collectionName",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "collectionName",
+							"value": "user"
+						},
+						{
+							"key": "id",
+							"value": "63b970487327474c84de3b01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7050/v1/getOne/:collectionName/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"v1",
+						"getOne",
+						":collectionName",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "collectionName",
+							"value": "user"
+						},
+						{
+							"key": "id",
+							"value": "63b970357327474c84de3b00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7050/v1/getAll/:collectionName?page=1&limit=10&sortDirection=-1&sortBy=_id&searchText=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7050",
+					"path": [
+						"v1",
+						"getAll",
+						":collectionName"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "sortDirection",
+							"value": "-1"
+						},
+						{
+							"key": "sortBy",
+							"value": "_id"
+						},
+						{
+							"key": "searchText",
+							"value": ""
+						}
+					],
+					"variable": [
+						{
+							"key": "collectionName",
+							"value": "user"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
