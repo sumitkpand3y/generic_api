@@ -6,7 +6,6 @@ import { DB } from "./models/db";
 import * as logger from "./models/logs";
 import errorHandler from "errorhandler";
 import { access } from "fs";
-const serverless = require("serverless-http");
 // import ExpressValidator from "express-validator";
 var expressValidator = require("express-validator");
 
@@ -84,7 +83,5 @@ app.use(function (req: Request, res: Response | any, next: NextFunction) {
   res.status(404).send("Page/Api Not Found");
   return;
 });
-app.use(`/.netlify/functions/api`, require("./routes/apiRoutes"));
 
 module.exports = app;
-module.exports.handler = serverless(app);
