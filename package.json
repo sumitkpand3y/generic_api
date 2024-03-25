@@ -32,7 +32,7 @@
     "netlify-cli": "^17.20.1",
     "netlify-lambda": "^2.0.16",
     "node-cron": "^3.0.0",
-    "passport": "0.4.1",
+    "passport": "0.6.0",
     "passport-http-bearer": "1.0.1",
     "passport-local": "1.0.0",
     "path": "^0.12.7",
