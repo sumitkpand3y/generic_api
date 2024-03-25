@@ -6,6 +6,7 @@ import { DB } from "./models/db";
 import * as logger from "./models/logs";
 import errorHandler from "errorhandler";
 import { access } from "fs";
+import * as fs from "fs";
 // import ExpressValidator from "express-validator";
 var expressValidator = require("express-validator");
 

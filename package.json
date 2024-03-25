@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Api",
   "scripts": {
-    "start": "npm run build:live",
+    "start:dev": "nodemon ./src/index.js",
+    "start": "npm run build && node ./build/index.js",
     "build": "./node_modules/.bin/tsc -p .",
     "build-fr": "cd ..\\fr-service && npm run build && npm run generate",
     "copy": "cd ..\\fr-service && XCOPY dist\\** ..\\bk-service\\public\\ /E/H/C/I/Y",
