@@ -4,9 +4,6 @@
   "description": "Api",
   "scripts": {
     "start": "npm run build:live",
-    "build": "./node_modules/.bin/tsc -p .",
-    "build-fr": "cd ..\\fr-service && npm run build && npm run generate",
-    "copy": "cd ..\\fr-service && XCOPY dist\\** ..\\bk-service\\public\\ /E/H/C/I/Y",
     "build:live": "nodemon --watch \"src/**\" --ext \"ts\" --exec \"ts-node\" src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
