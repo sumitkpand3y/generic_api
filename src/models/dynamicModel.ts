@@ -32,8 +32,6 @@ export let find = (collectionName:string,query:any,projections:any,options:any,c
     })
 }
 export var getTotalCountByAggregate = function (collectionName, array: any) {
-    // console.log("array",array);
-    
     return getCollectionObject(collectionName, schema).countDocuments([
       array,
     //   { $count: "total_count" },
@@ -60,8 +58,6 @@ export var updateOne = (
     id: string,
     data:JSON,
 ):any =>{
-    // console.log("idddddd",id);
-    
     let startTime:any = new Date();
     return getCollectionObject(collectionName,schema).updateOne(
         {_id: id},

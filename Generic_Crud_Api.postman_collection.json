@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "71a59b29-77e3-4349-b2c2-9c726c0ddc39",
+		"_postman_id": "b81e6719-8a82-4d97-8ae8-06c8cceb2075",
 		"name": "Generic_Crud_Api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16699243"
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userId\":\"19\",\r\n    \"name\":\"Amit Kumar Pandey\",\r\n    \"email\":\"amit@gmail.com\",\r\n    \"phoneNo\":\"909090909090\"\r\n}",
+					"raw": "[\r\n    {\r\n    \"fieldType\": \"Section\",\r\n    \"isUnique\": false,\r\n    \"label\": \"Enter section Label\",\r\n    \"isOneColumn\": true,\r\n    \"isTwoColumn\": false,\r\n    \"fields\": [\r\n        {\r\n            \"fieldType\": \"TextInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"isPlaceholderVisible\": false,\r\n            \"placeholder\": \"Input your text here...\",\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \" helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"LongTextInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"isPlaceholderVisible\": false,\r\n            \"placeholder\": \"Input your text here...\",\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"NumberInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \" isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"TwoColumn\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": true\r\n        },\r\n        {\r\n            \"fieldType\": \"OneColumn\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": true\r\n        },\r\n        {\r\n            \"fieldType\": \"SelectList\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false,\r\n            \"options\": [\r\n                {\r\n                    \"optionLabel\": \"Option 1\",\r\n                    \"optionValue\": \"Option 1\"\r\n                },\r\n                {\r\n                    \"optionLabel\": \"Option 2\",\r\n                    \"optionValue\": \"Option 2\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"isContainer\": true\r\n},\r\n{\r\n    \"fieldType\": \"Section-2\",\r\n    \"isUnique\": false,\r\n    \"label\": \"Enter section Label\",\r\n    \"isOneColumn\": true,\r\n    \"isTwoColumn\": false,\r\n    \"fields\": [\r\n        {\r\n            \"fieldType\": \"TextInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"isPlaceholderVisible\": false,\r\n            \"placeholder\": \"Input your text here...\",\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \" helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"LongTextInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"isPlaceholderVisible\": false,\r\n            \"placeholder\": \"Input your text here...\",\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"NumberInput\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \" isRequired\": false\r\n        },\r\n        {\r\n            \"fieldType\": \"TwoColumn\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": true\r\n        },\r\n        {\r\n            \"fieldType\": \"OneColumn\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": true\r\n        },\r\n        {\r\n            \"fieldType\": \"SelectList\",\r\n            \"isUnique\": false,\r\n            \"isContainer\": false,\r\n            \"label\": \"Enter label\",\r\n            \"isHelpBlockVisible\": false,\r\n            \"helpBlockText\": \"Please input your helpblock here...\",\r\n            \"isRequired\": false,\r\n            \"options\": [\r\n                {\r\n                    \"optionLabel\": \"Option 1\",\r\n                    \"optionValue\": \"Option 1\"\r\n                },\r\n                {\r\n                    \"optionLabel\": \"Option 2\",\r\n                    \"optionValue\": \"Option 2\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"isContainer\": true\r\n}\r\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -35,7 +35,7 @@
 					"variable": [
 						{
 							"key": "collectionName",
-							"value": "user"
+							"value": "formBuilder"
 						}
 					]
 				}
@@ -49,7 +49,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userId\":\"12\",\r\n    \"name\":\"pandey\",\r\n    \"email\":\"pandey@gmail.com\",\r\n    \"phoneNo\":\"909090909090\"\r\n}",
+					"raw": "[\r\n    {\r\n        \"fieldType\": \"Section\",\r\n        \"isUnique\": false,\r\n        \"label\": \"Enter section Label\",\r\n        \"isOneColumn\": true,\r\n        \"isTwoColumn\": false,\r\n        \"fields\": [\r\n            {\r\n                \"fieldType\": \"TextInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"isPlaceholderVisible\": false,\r\n                \"placeholder\": \"Input your text here...\",\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \" helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"LongTextInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"isPlaceholderVisible\": false,\r\n                \"placeholder\": \"Input your text here...\",\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"NumberInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \" isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"TwoColumn\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": true\r\n            },\r\n            {\r\n                \"fieldType\": \"OneColumn\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": true\r\n            },\r\n            {\r\n                \"fieldType\": \"SelectList\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false,\r\n                \"options\": [\r\n                    {\r\n                        \"optionLabel\": \"Option 1\",\r\n                        \"optionValue\": \"Option 1\"\r\n                    },\r\n                    {\r\n                        \"optionLabel\": \"Option 2\",\r\n                        \"optionValue\": \"Option 2\"\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"isContainer\": true\r\n    },\r\n    {\r\n        \"fieldType\": \"Section-2\",\r\n        \"isUnique\": false,\r\n        \"label\": \"Enter section Label\",\r\n        \"isOneColumn\": true,\r\n        \"isTwoColumn\": false,\r\n        \"fields\": [\r\n            {\r\n                \"fieldType\": \"TextInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"isPlaceholderVisible\": false,\r\n                \"placeholder\": \"Input your text here...\",\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \" helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"LongTextInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"isPlaceholderVisible\": false,\r\n                \"placeholder\": \"Input your text here...\",\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"NumberInput\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \" isRequired\": false\r\n            },\r\n            {\r\n                \"fieldType\": \"TwoColumn\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": true\r\n            },\r\n            {\r\n                \"fieldType\": \"OneColumn\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": true\r\n            },\r\n            {\r\n                \"fieldType\": \"SelectList\",\r\n                \"isUnique\": false,\r\n                \"isContainer\": false,\r\n                \"label\": \"Enter label\",\r\n                \"isHelpBlockVisible\": false,\r\n                \"helpBlockText\": \"Please input your helpblock here...\",\r\n                \"isRequired\": false,\r\n                \"options\": [\r\n                    {\r\n                        \"optionLabel\": \"Option 1\",\r\n                        \"optionValue\": \"Option 1\"\r\n                    },\r\n                    {\r\n                        \"optionLabel\": \"Option 2\",\r\n                        \"optionValue\": \"Option 2\"\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"isContainer\": true\r\n    }\r\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -72,11 +72,11 @@
 					"variable": [
 						{
 							"key": "collectionName",
-							"value": "user"
+							"value": "formBuilder"
 						},
 						{
 							"key": "id",
-							"value": "63b97391afa8766b34fa7c9c"
+							"value": "65ff3bd9e03ca246808f4514"
 						}
 					]
 				}
@@ -104,11 +104,11 @@
 					"variable": [
 						{
 							"key": "collectionName",
-							"value": "user"
+							"value": "formBuilder"
 						},
 						{
 							"key": "id",
-							"value": "63b970487327474c84de3b01"
+							"value": "65ff3bd9e03ca246808f4514"
 						}
 					]
 				}
